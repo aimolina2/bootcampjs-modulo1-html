@@ -24,4 +24,19 @@ Con el diseño de la página a maquetar hacemos un boceto de cómo vamos a estru
 
 ## 3. Esquema de nuestro HTML
 
-Empezamos a montar la estructura del proyecto en el HTML creando los contenedores y etiquetas principales.
+Empezamos a montar la estructura del proyecto en el HTML creando los contenedores y etiquetas principales. Incluimos todo el contenido al que daremos estilo desde la hoja de estilos CSS.
+
+## 4. Maquetación del contenido principal - cards de producto
+
+En primer lugar definimos el ancho total del contenedor: 1280 px.
+
+Antes de empezar a aplicar estilos definimos algunas de las variables que vamos a usar de forma recurrente como los colores o tamaños de fuente.
+
+<img src="./images-readme/03_variables.png" alt="definición variables" title="definición variables" />
+
+Maquetamos el apartado principal de **NUEVAS COLECCIONES**. Damos estilo al **h1** y trabajamos las cards que componen la grid que ocupa gran parte de la sección.
+
+Primero usamos _flex_ para alinear en columna el título y el contenedor de todas las cards. Dentro organizamos las cards de producto con _grid_. Los valores de disposición de la grid son los que cambiamos a la hora de definir la media query (que hemos establecido como **(max-width: 1280px)**), pasando de ocupar **repeat(3, 1fr)** a una única fracción **1fr**.
+
+<img src="./images-readme/04_grid.png" alt="definición variables" title="definición variables" />
+<img src="./images-readme/05_grid_responsive.png" alt="media query grid responsive" title="media query grid responsive" />
