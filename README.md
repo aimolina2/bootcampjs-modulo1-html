@@ -36,7 +36,15 @@ Antes de empezar a aplicar estilos definimos algunas de las variables que vamos 
 
 Maquetamos el apartado principal de **NUEVAS COLECCIONES**. Damos estilo al **h1** y trabajamos las cards que componen la grid que ocupa gran parte de la sección.
 
-Primero usamos _flex_ para alinear en columna el título y el contenedor de todas las cards. Dentro organizamos las cards de producto con _grid_. Los valores de disposición de la grid son los que cambiamos a la hora de definir la media query (que hemos establecido como **(max-width: 1280px)**), pasando de ocupar **repeat(3, 1fr)** a una única fracción **1fr**.
+Primero usamos _flex_ para alinear en columna el título y el contenedor de todas las cards. Dentro organizamos las cards de producto con _grid_. Los valores de disposición de la grid son los que cambiamos a la hora de definir la media query (que hemos establecido como **(max-width: 920px)**), pasando de ocupar **repeat(3, 1fr)** a una única fracción **1fr**.
 
 <img src="./images-readme/04_grid.png" alt="definición variables" title="definición variables" />
 <img src="./images-readme/05_grid_responsive.png" alt="media query grid responsive" title="media query grid responsive" />
+
+## 5. Maquetación barra de navegación
+
+La barra de navegación ocupa toda la pantalla y se mantiene fija al hacer scroll. Usamos **flexbox** para la organización de los ítems del menú.
+
+<img src="./images-readme/06_navbar.png" alt="barra de navegación" title="barra de navegación" />
+
+En la declaración **@media (max-width: 920px)** donde habíamos indicado los cambios para cuando la resolución de la pantalla sea inferior a 920px añadimos las modificaciones para la barra de navegación: eliminamos los _ul_ y centramos la imagen del menú hamburguesa.
