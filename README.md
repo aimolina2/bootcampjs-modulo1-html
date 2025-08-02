@@ -48,3 +48,11 @@ La barra de navegación ocupa toda la pantalla y se mantiene fija al hacer scrol
 <img src="./images-readme/06_navbar.png" alt="barra de navegación" title="barra de navegación" />
 
 En la declaración **@media (max-width: 920px)** donde habíamos indicado los cambios para cuando la resolución de la pantalla sea inferior a 920px añadimos las modificaciones para la barra de navegación: eliminamos los _ul_ y centramos la imagen del menú hamburguesa.
+
+## 6. Maquetación footer
+
+De forma similar a como hemos maquetado la barra de navegación damos estilo al footer, usando _flexbox_ para organizar los elementos (estos elementos están incluidos como un listado mediante la etiqueta **li**).
+
+Después indicamos cómo funcionaría la maquetación cuando la pantalla es de 920px o menos, tal como hemos hecho con la barra de navegación.
+
+<img src="./images-readme/07_footer.png" alt="footer" title="footer" />
