@@ -56,3 +56,20 @@ De forma similar a como hemos maquetado la barra de navegación damos estilo al 
 Después indicamos cómo funcionaría la maquetación cuando la pantalla es de 920px o menos, tal como hemos hecho con la barra de navegación.
 
 <img src="./images-readme/07_footer.png" alt="footer" title="footer" />
+
+## 7. Efectos y pequeñas interacciones
+
+Agregamos efectos de _hover_ que ayudan al usuario a identificar elementos clickables y dar más dinamismo a la página.
+
+- La barra del menú de navegación se amplia.
+- Los ítems principales cambian su _font-weight_ a _bold_.
+- Los iconos de la barra de navegación escalan aumentando su tamaño.
+- Las imágenes de los productos aumentan y se genera un ligero sombreado (**box-shadow**).
+
+Todos estos cambios tienen indicaciones de velocidad y "modo de entrada" para hacer que los cambios entren de una forma más suave y "natural". Usamos la propiedad **transition**.
+
+<img src="./images-readme/08_hover.png" alt="efectos hover" title="efectos hover" />
+
+## 8. Corrección de pequeños detalles
+
+Por último, tras revisar el código y funcionamiento de la página ajustamos algunos padding y agregamos la propiedad **z-index:1** al header (al incluir las acciones de **:hover** observé que las cards se superponían a la barra de navegación, por lo que tuve que indicar que ésta tenía una posición superior).

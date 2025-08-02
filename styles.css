@@ -23,9 +23,15 @@ body {
 header {
   width: 100%;
   border-bottom: 1px solid var(--color-dark);
-  padding: 16px;
+  padding: 16px 0;
   position: fixed;
   background-color: var(--color-soft);
+  transition: padding 0.2s ease-in-out;
+  z-index: 1;
+}
+
+header:hover {
+  padding: 36px;
 }
 
 .navbar {
@@ -34,6 +40,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 32px;
 }
 
 .principal-nav {
@@ -46,6 +53,11 @@ header {
   text-decoration: none;
   color: var(--color-dark);
   font-size: var(--font-size-m);
+  transition: font-weight 0.2s ease-in-out;
+}
+
+.principal-nav li a:hover {
+  font-weight: bold;
 }
 
 .secondary-nav {
@@ -53,6 +65,14 @@ header {
   display: flex;
   justify-content: space-between;
   gap: 32px;
+}
+
+.secondary-nav li {
+  transition: transform 0.2s ease-in-out;
+}
+
+.secondary-nav li:hover {
+  transform: scale(1.5);
 }
 
 /* CONTENIDO PRINCIPAL */
@@ -101,6 +121,13 @@ main {
 .img-card {
   border-radius: 8px;
   width: 100%;
+  transition: transform 0.3s ease-in;
+  transition: box-shadow 0.3s easy;
+}
+
+.img-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2px 16px #f4f4f4;
 }
 
 /* MAQUETACIÓN FOOTER */
@@ -108,7 +135,7 @@ main {
 footer {
   width: 100%;
   background-color: var(--color-dark);
-  padding: 32px;
+  padding: 32px 0;
 }
 
 .footer-items {
@@ -119,6 +146,7 @@ footer {
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
+  padding: 0 32px;
 }
 
 footer ul li {
@@ -141,9 +169,7 @@ footer ul li {
 
 @media (max-width: 920px) {
   .products-container {
-    display: grid;
     grid-template-columns: 1fr;
-    gap: 32px 64px;
   }
 
   .navbar ul {
@@ -156,20 +182,12 @@ footer ul li {
 
   .footer-items {
     width: 100%;
-    color: var(--color-soft);
-    font-size: var(--font-size-m);
     font-weight: bold;
-    display: flex;
     flex-direction: column;
     align-items: start;
-    margin: 0 auto;
   }
 
   footer ul li {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 16px;
     border-bottom: 1px solid var(--color-soft);
     width: 100%;
     padding: 32px 0 16px 0;
